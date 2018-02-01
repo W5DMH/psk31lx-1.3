@@ -1,0 +1,57 @@
+psk31lx version 1.0
+
+- RX/TX indicator works now
+
+- Reaganged the terms in the status line.  DCD on/off is now near the
+  scope and spectrum
+
+- Fixed logic problem with initializing txfreq
+
+- Changed Left/Right inc/dec rx freq by 8 Hz to right/left arrows.
+
+- Extended vertical bar in spectrum display
+
+- Fixed logic problem in cfgfile opening
+
+- Put project under automake
+
+- Added spectrum display
+
+- Added -v command line option for version
+
+- ESC key now does an exit now
+
+- SAMPLE_RATE now defined in psk31-coder.h 
+
+- dcd sets/clears with psk signal 
+
+- removed Ctrl D to set dcd since it is automatic now
+
+- removed PASSALL from .ini files, code, and output screen
+
+- renamed TXTRACK to NET in psk31lx.ini
+
+- Ctrl X redraws the screen
+
+- Removed mixer command line arg - never used
+
+- psk31.ini renamed psk31lx.ini  Look for ~/.psk31lx.ini first. 
+  If not there, look for DATADIR/psk31lx.ini 
+
+- Added DSPDEV and PPTDEV to psk31lx.ini
+  Command line args will override psk31lx.ini values
+
+
+
+psk31lx version 1.2ext
+
+-Added GUI on off switch to ini file minimizes psk31lx 
+
+-Added AFC on off switch to ini file 
+
+-Added DCD value switch to ini file sets signal level to decode
+
+-Added TX  / RX Telemetry Features (see PKZero features) 
+
+-Added received.log (see PKZero features) 
+

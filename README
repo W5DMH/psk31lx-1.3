@@ -1,0 +1,75 @@
+Welcome to psk31lx.
+
+psk31lx is free software. Please see the file COPYING for details.
+For documentation, please see the files in the doc subdirectory.
+For building and installation instructions please see the INSTALL file.
+
+A default psk31lx.ini file will be installed by "make install" so the
+program can find some defaults values.  To override these values with
+your own values, copy the psk31lx.ini file in the src directory to your
+home directory and rename it .psk31lx.ini
+
+The .psk31lx.ini file in your home will override the default psk31lx.ini
+file.  If neither of the above file are found, it will look for one in 
+the current directory.  This allows you to test the program from the
+src directory befor installing it.
+
+The command line arguments will override the coresponding entries in the
+psk31lx.ini files.
+
+
+Usage:  psk31lx [-a audiodevice] [-t pttdevice] [-q [-l]] [-t] [-x] [-h]
+
+       -a audio device   - Specify the sound card. Default is /dev/dsp.
+                           For the second sound card use -a /dev/dsp1
+
+       -t serial device  - Specify the PTT device. Default is /dev/ttyS1.
+                           For the first serial device use -t /dev/ttyS0
+
+       -v print version number
+
+       -q: Enable QPSK mode
+
+       -l: Invert phase shift for LSB mode
+
+       -x: TX freq follows RX freq
+
+       -h: print help message
+
+
+Control Keys:
+       Ctrl A - toggle agc
+       Ctrl L - toggle LSB<>USB
+       Ctrl R - rx mode
+       Ctrl T - tx mode
+       Ctrl U - tune mode
+       Ctrl K - toggle NET
+       Ctrl W - CW ID
+       Ctrl X - clear text windows
+       ESC    - exit
+       
+       Up Arror    - increment rx freq + 1 Hz
+       Down Arrow  - decrement rx freq - 1 Hz
+       Right Arrow - increase rx freq by + 8 Hz
+       Left Arrow  - decrement rx freq by + 8 Hz
+
+Tuning:
+       A signal will appear as a column of dots in the spectrum display.
+       The stronger the signal, the taller the column will be.  Tune your
+       rig until a signal is centered on the spectrum.  The phase scope
+       should now be showing the 180 degree phase shift of a BPSK signal.
+       The O in the phase scope should be shifting between the 12 o'clock
+       and 6 o'clock position.
+
+       Depending on the tuning rate of your rig, it may be difficult to
+       tune a signal to the exact center of the spectrum display.  If this
+       is the case, tune it as close as you can, and then use the arrow keys
+       to fine tune.  The Up and Down arrow keys will change the rx frequency
+       by 1 Hz.  The Right and Left arrow keys will change the rxfrequency
+       by 8 Hz.  Using the arrow keys will allow you tune it closer.
+       When you get it tuned to within about 8 Hz, the AFC will take over and
+       do the rest.
+       
+
+       
+       

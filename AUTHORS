@@ -1,0 +1,17 @@
+Authors of psk31lx.
+
+Hansi, DL9RDZ
+  Hansi designed and implemented the original psk31lx.
+
+Ted, WA0EIR
+  I redesigned it.  I implemented a "waterfall". 
+  This makes tuning a signal much easier.
+
+Dan W5DMH
+I added telemetry features for TX and RX functions
+added GUI switch to the ini file
+added AFC switch to the ini file
+added DSD switch to the ini file
+  
+See also the files THANKS and ChangeLog.
+
