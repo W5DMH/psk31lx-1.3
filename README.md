@@ -16,8 +16,8 @@
 -Added received.log 
        If an incoming message has a good callsign but the crc fails, then the message is placed in the received.log file located in                /home/pi/psk31lx/RX/
 
-requires : 
-Ncurses libraries: 
+requires :                                                                                                                     
+Ncurses libraries:                                                                                                             
 sudo apt-get install libncurses5-dev libncursesw5-dev
 
 linux Dialog : 
