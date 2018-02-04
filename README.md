@@ -20,7 +20,7 @@ requires :
 Ncurses libraries:                                                                                                             
 sudo apt-get install libncurses5-dev libncursesw5-dev
 
-linux Dialog : 
+linux Dialog :                                                                                                                 
 sudo apt-get install dialog 
 
 a good companion program is PSKZero located here: 
